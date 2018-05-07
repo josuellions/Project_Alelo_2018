@@ -1,0 +1,6 @@
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\bin\Debug\AcessoDados.dll
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\bin\Debug\AcessoDados.pdb
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\obj\Debug\AcessoDados.csprojResolveAssemblyReference.cache
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\obj\Debug\AcessoDados.csproj.CoreCompileInputs.cache
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\obj\Debug\AcessoDados.dll
+F:\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\AcessoDados\obj\Debug\AcessoDados.pdb

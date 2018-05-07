@@ -1,0 +1,44 @@
+﻿@*@model IEnumerable<alelo.model.web.Categoria> *@
+
+<h3>Categorias</h3>
+<fieldset class="fieldsetMenuLeft">
+    @*
+            @foreach (var item in Model)
+            {
+                <ul>
+                    <li>
+                        @Html.ActionLink(item.name, item.name, new { id = item.id })
+        @Html.ActionLink(item.name, "ListarDetalhada", "Categoria")
+        </li>
+        </ul>
+        }
+    *@
+    <ul>
+        <li>
+            @Html.ActionLink("Tarefas", "ListarDetalhada/1", "Categoria")
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.ActionLink("Compras", "ListarDetalhada/2", "Categoria")
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @Html.ActionLink("Outros", "ListarDetalhada/3", "Categoria")
+        </li>
+    </ul>
+    <hr />
+    <ul>
+        <li>
+            @Html.ActionLink("Create Lista", "NovaLista", "Categoria")
+        </li>
+    </ul>
+    <hr />
+    <ul>
+        <li>
+            @Html.ActionLink("Listar Categorias", "ListarCategoria", "Categoria")
+        </li>
+    </ul>
+    <hr />
+</fieldset>

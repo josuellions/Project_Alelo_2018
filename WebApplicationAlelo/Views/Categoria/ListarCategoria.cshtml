@@ -1,0 +1,41 @@
+﻿@model IEnumerable<alelo.model.web.Categoria>
+
+@{
+    ViewBag.Title = "Listar Categoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Listar Categorias</h1>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th colspan="2"></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayName(item.Status == 1 ? "Ativo" : "Inativo")
+                </td>
+                <td>
+                    @Html.ActionLink("Create List", "NovaLista")
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "ListarDetalhada", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

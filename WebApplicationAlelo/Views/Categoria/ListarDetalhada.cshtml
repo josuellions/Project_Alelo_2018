@@ -1,0 +1,59 @@
+﻿@model IEnumerable<alelo.model.web.CategoriaLista>
+
+@{
+    ViewBag.Title = "Listar Detalhada";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_tituloListDetalhe")
+
+<div class="table-responsive">
+    <p>
+        @Html.ActionLink("Create New", "NovaLista")
+    </p>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th colspan="3"></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modeItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayName(item.Status == 1 ? "Ativo" : "Inativo")
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "ListarItens", "ListaItem")
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

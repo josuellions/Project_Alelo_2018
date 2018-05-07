@@ -1,0 +1,61 @@
+﻿/*Alinhamento menu lateral - Right*/
+.divMenuLeft {
+    padding: 2%;
+    padding-right: 5%;
+    float: left;
+    border-right: 1px solid #e1dede;
+}
+
+.fieldsetMenuLeft {
+    height: 635px;
+}
+
+h1 {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+h2 {
+    padding-bottom: 2.5%;
+    text-align: center;
+    color: red;
+}
+
+/*Alinhamento Banner Home*/
+.BannerHome {
+    align-items: center;
+    padding: 10%;
+}
+
+/*Alinhamento Lista Categoria*/
+.fildListCategoria {
+    margin-top: 2.5%;
+}
+
+/*Link com primeira letra maiúscula*/
+a, td, th, label {
+    text-transform: capitalize;
+}
+
+/*Alinhamento Mensagem Erro*/
+.alingMensagem {
+    position: relative;
+    float: right;
+    bottom: 0;
+    z-index: 1;
+    width: 70%;
+}
+/*Alinhamento footer - rodapé */
+footer {
+    border-top: 1px solid #e1dede;
+    position: absolute;
+    text-align: center;
+    padding: .5%;
+    bottom: 0;
+    width: 60%;
+}
+
+    footer p {
+        text-align: center;
+        padding-top: 11%;
+    }

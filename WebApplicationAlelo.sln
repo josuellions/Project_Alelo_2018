@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAlelo", "WebApplicationAlelo\WebApplicationAlelo.csproj", "{A07C3627-8EFB-41F5-BA10-B67FA47CEC88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dados", "Dados", "{0B3245F1-2BBF-4CB0-A096-9507E81B2924}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{DDEBE050-51F7-4328-86FE-560F88985E4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{16700DA0-CC24-48D7-A6BE-B46EC905DA35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alelo.model.web", "alelo.model.web\alelo.model.web.csproj", "{FD70B77E-801C-4E34-8F65-54C876B0E4D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A07C3627-8EFB-41F5-BA10-B67FA47CEC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07C3627-8EFB-41F5-BA10-B67FA47CEC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07C3627-8EFB-41F5-BA10-B67FA47CEC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07C3627-8EFB-41F5-BA10-B67FA47CEC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD70B77E-801C-4E34-8F65-54C876B0E4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD70B77E-801C-4E34-8F65-54C876B0E4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD70B77E-801C-4E34-8F65-54C876B0E4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD70B77E-801C-4E34-8F65-54C876B0E4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A07C3627-8EFB-41F5-BA10-B67FA47CEC88} = {16700DA0-CC24-48D7-A6BE-B46EC905DA35}
+		{FD70B77E-801C-4E34-8F65-54C876B0E4D9} = {DDEBE050-51F7-4328-86FE-560F88985E4D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFC00DB3-858A-41AD-812C-0053A21632AE}
+	EndGlobalSection
+EndGlobal

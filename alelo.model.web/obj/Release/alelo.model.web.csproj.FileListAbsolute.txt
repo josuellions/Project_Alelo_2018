@@ -1,0 +1,6 @@
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\bin\Release\alelo.model.web.dll
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\bin\Release\alelo.model.web.pdb
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\obj\Release\alelo.model.web.csprojResolveAssemblyReference.cache
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\obj\Release\alelo.model.web.csproj.CoreCompileInputs.cache
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\obj\Release\alelo.model.web.dll
+C:\Users\Josuel\Documents\project_2018\teste_vaga\front-end_alelo\asp_angular_mvc\SolutionAlelo\WebApplicationAlelo\alelo.model.web\obj\Release\alelo.model.web.pdb

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<alelo.model.web.CategoriaLista>
+
+
+
+    @switch (Request.QueryString["id"])
+    {
+        case "1":
+            <h1>Lista Tarefas</h1>
+            break;
+        case "2":
+            <h1>Lista Compras</h1>
+            break;
+        case "3":
+            <h1>Lista Outros</h1>
+            break;
+        default:
+            <h1>Lista Detalhada</h1>
+            break;
+    }
+

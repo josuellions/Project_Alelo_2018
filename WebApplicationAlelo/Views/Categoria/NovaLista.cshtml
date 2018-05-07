@@ -1,0 +1,68 @@
+﻿@model alelo.model.web.CategoriaLista
+
+@{
+    ViewBag.Title = "Nova Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["Sucesso"] != null) {@Html.Partial("_PartialSucesso")}
+else if(TempData["Erro"] != null) { @Html.Partial("_PartialErro")}
+
+<h1>Nova Lista</h1>
+
+<div style="float: left">
+
+    @using (Html.BeginForm("NovaLista", "Categoria", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <h4>Categoria Nova Lista</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.TypeId, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("novalista", new List<SelectListItem>
+                                {
+                                    new SelectListItem{Text = "Tarefas", Value = "1"},
+                                    new SelectListItem{Text = "Compras", Value = "2"},
+                                    new SelectListItem{Text = "Outros", Value = "3"},
+                                }, "Select...", new { @class = "form-control" })
+                    @*
+                        @Html.EditorFor(model => model.typeId, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.typeId, "", new { @class = "text-danger" })
+                    *@
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" id="Create" name="create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "ListarCategoria")
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
