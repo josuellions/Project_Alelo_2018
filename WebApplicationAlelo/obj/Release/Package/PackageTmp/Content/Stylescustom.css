@@ -1,61 +1,159 @@
-﻿/*Alinhamento menu lateral - Right*/
-.divMenuLeft {
-    padding: 2%;
-    padding-right: 5%;
-    float: left;
-    border-right: 1px solid #e1dede;
-}
-
-.fieldsetMenuLeft {
-    height: 635px;
-}
-
-h1 {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
-
-h2 {
-    padding-bottom: 2.5%;
-    text-align: center;
-    color: red;
-}
-
-/*Alinhamento Banner Home*/
-.BannerHome {
-    align-items: center;
-    padding: 10%;
-}
-
-/*Alinhamento Lista Categoria*/
-.fildListCategoria {
-    margin-top: 2.5%;
-}
-
-/*Link com primeira letra maiúscula*/
-a, td, th, label {
-    text-transform: capitalize;
-}
-
-/*Alinhamento Mensagem Erro*/
-.alingMensagem {
-    position: relative;
-    float: right;
-    bottom: 0;
-    z-index: 1;
-    width: 70%;
-}
-/*Alinhamento footer - rodapé */
-footer {
-    border-top: 1px solid #e1dede;
-    position: absolute;
-    text-align: center;
-    padding: .5%;
-    bottom: 0;
-    width: 60%;
-}
-
-    footer p {
-        text-align: center;
-        padding-top: 11%;
+﻿/*Desktops*/
+@media(min-width: 1024px) {
+    /*Alinhamento menu lateral - Right*/
+    .divMenuLeft {
+        padding: 2%;
+        padding-right: 5%;
+        float: left;
+        border-right: 1px solid #e1dede;
     }
+
+    .fieldsetMenuLeft {
+        height: 635px;
+    }
+
+    h1 {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
+
+    h2 {
+        padding-bottom: 2.5%;
+        text-align: center;
+        color: red;
+    }
+
+    /*Alinhamento Banner Home*/
+    .BannerHome {
+        align-items: center;
+        padding: 10%;
+    }
+
+    /*Alinhamento Lista Categoria*/
+    .fildListCategoria {
+        margin-top: 2.5%;
+    }
+
+    /*Link com primeira letra maiúscula*/
+    a, td, th, label {
+        text-transform: capitalize;
+    }
+
+    /*Alinhamento Mensagem Erro*/
+    .alingMensagem {
+        position: relative;
+        float: right;
+        bottom: 0;
+        z-index: 1;
+        width: 70%;
+    }
+    /*Alinhamento footer - rodapé */
+    footer {
+        border-top: 1px solid #e1dede;
+        position: absolute;
+        text-align: center;
+        padding: .5%;
+        bottom: 0;
+        width: 60%;
+    }
+
+        footer p {
+            text-align: center;
+            padding-top: 11%;
+        }
+}
+
+/*Smartphones*/
+@media(max-width: 736px) {
+    /*Alinhamento menu lateral - Right*/
+    .divMenuLeft {
+        padding: 1%;
+        padding-right: 1%;
+        float: left;
+        border-right: 1px solid #e1dede;
+    }
+
+    .fieldsetMenuLeft {
+        height: 410px;
+    }
+
+    h1 {
+        font-size: 2.2rem !important;
+        padding-left: 1.5%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align:center;
+    }
+
+    h2 {
+        padding-bottom: 2.5%;
+        text-align: center;
+        font-size: .7rem;
+        font-size: 2rem !important;
+        color: red;
+    }
+
+    /*Alinhamento Banner Home*/
+    .BannerHome {
+        padding-left: 6%;
+        padding-top: 2.5%;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 2.5%;
+        width: 65%;
+    }
+
+    /*Alinhamento Lista Categoria*/
+    .fildListCategoria {
+        margin-top: 2.5%;
+        
+    }
+       .fieldsetMenuLeft a {
+        font-size: 1rem;
+    }
+
+    .divMenuLeft h3 {
+        font-size: 1.5rem;
+    }
+
+    /*Link com primeira letra maiúscula*/
+    a, td, th, label {
+        text-transform: capitalize;
+    }
+
+    /*Alinhamento Mensagem Erro*/
+    .alingMensagem {
+        position: relative;
+        float: right;
+        bottom: 0;
+        z-index: 1;
+        width: 70%;
+        
+    }
+        .alingMensagem h3 {
+            font-size: 1rem !important;
+        }
+
+        /*Alinhamento Tabela*/
+        .table-responsive {
+            float: right;
+            margin-left: 5% !important;
+            width: 60% !important;
+            font-size: 60% !important;
+        }
+
+    /*Alinhamento Form*/
+    form{
+        margin-left: 10%;
+    }
+
+    /*Alinhamento footer - rodapé */
+    footer {
+        border-top: 1px solid #e1dede;
+        position: absolute;
+        text-align: center;
+        font-size: 1.2rem;
+        bottom: 0;
+        width: 90%;
+    }
+}
